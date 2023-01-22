@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testcases.DirectoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-22T17:46:29" hostname="DESKTOP-6GFGUQ4" time="14.801">
+  <properties/>
+  <testcase name="verifyDirectoryPage" classname="testcases.DirectoryTest" time="14.801"/>
+  <system-out><![CDATA[Total Name List 1
+Total location list 1
+Text Chis present
+]]></system-out>
+  <system-err><![CDATA[ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 51843
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan 22, 2023 9:45:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Jan 22, 2023 9:45:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 109, so returning the closest version found: 106
+Jan 22, 2023 9:45:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 109 of 106
+]]></system-err>
+</testsuite>
