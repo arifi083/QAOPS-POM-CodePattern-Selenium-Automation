@@ -1,21 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testcases.DirectoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-22T17:46:29" hostname="DESKTOP-6GFGUQ4" time="14.801">
+<testsuite name="testcases.DirectoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-23T09:15:22" hostname="DESKTOP-6GFGUQ4" time="14.757">
   <properties/>
-  <testcase name="verifyDirectoryPage" classname="testcases.DirectoryTest" time="14.801"/>
+  <testcase name="verifyDirectoryPage" classname="testcases.DirectoryTest" time="14.757"/>
   <system-out><![CDATA[Total Name List 1
 Total location list 1
 Text Chis present
 ]]></system-out>
   <system-err><![CDATA[ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
-Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 51843
+Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 64460
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jan 22, 2023 9:45:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jan 23, 2023 1:15:01 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jan 22, 2023 9:45:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jan 23, 2023 1:15:01 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 109, so returning the closest version found: 106
-Jan 22, 2023 9:45:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jan 23, 2023 1:15:01 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 109 of 106
+Jan 23, 2023 1:15:37 AM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
 ]]></system-err>
 </testsuite>

@@ -1,7 +1,5 @@
 package testcases;
-
 import com.org.baseclass.BaseClass;
-import com.thedeanda.lorem.LoremIpsum;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -31,9 +29,10 @@ public class LoginTest extends BaseClass {
     @Test(priority = 3)
     public void loginWithValidCredentials() throws IOException, InterruptedException {
 
-         homePage=new LoginPage()
-                  .login(getUserName(),getPassword());
+        homePage=new LoginPage()
+                .login(getUserName(),getPassword());
         //assert dashboard
+        System.out.println("valid test case");
         Assert.assertTrue(homePage.dashboardText());
 
 
@@ -42,44 +41,44 @@ public class LoginTest extends BaseClass {
 
 
     //negative testing
-//    @Test(priority =1)
-//    public void loginWithInvalidCredentials() throws IOException, InterruptedException {
-//
-//        loginPage = loginPage
-//                .blankLogin(LoremIpsum.getInstance().getFirstName(),getPassword());
-//        //assert dashboard
-//        Assert.assertTrue(loginPage.verifyCreds());
-//
-//
-//    }
+    //    @Test(priority =1)
+    //    public void loginWithInvalidCredentials() throws IOException, InterruptedException {
+    //
+    //        loginPage = loginPage
+    //                .blankLogin(LoremIpsum.getInstance().getFirstName(),getPassword());
+    //        //assert dashboard
+    //        Assert.assertTrue(loginPage.verifyCreds());
+    //
+    //
+    //    }
 
 
-//    @Test(dataProvider = "getDataProviderData")
-//    public void loginWithInValidCredentials(String userName, String password) throws IOException, InterruptedException {
-//
-//       loginPage= loginPage
-//               .blankLogin(userName,password);
-//       Assert.assertTrue(loginPage.verifyCreds());
-//
-//    }
+    //    @Test(dataProvider = "getDataProviderData")
+    //    public void loginWithInValidCredentials(String userName, String password) throws IOException, InterruptedException {
+    //
+    //       loginPage= loginPage
+    //               .blankLogin(userName,password);
+    //       Assert.assertTrue(loginPage.verifyCreds());
+    //
+    //    }
 
 
-//    @DataProvider
-//    public Object[][] getDataProviderData(){
-//        return new Object[][]{{LoremIpsum.getInstance().getFirstName(),getPassword()}};
-//    }
+    //    @DataProvider
+    //    public Object[][] getDataProviderData(){
+    //        return new Object[][]{{LoremIpsum.getInstance().getFirstName(),getPassword()}};
+    //    }
 
-    @Test(dataProvider = "QAOPS-BATCH3-DataProvider")
+    @Test(dataProvider = "GetExcelData-DataProvider")
     public void loginWithInValidCredentials(String userName, String password) throws IOException, InterruptedException {
 
         loginPage= loginPage
                 .blankLogin(userName,password);
-       // System.out.println(userName + " "+ password);
+        System.out.println("invalid test case");
         Assert.assertTrue(loginPage.verifyCreds());
 
     }
 
-    @DataProvider(name="QAOPS-BATCH3-DataProvider")
+    @DataProvider(name="GetExcelData-DataProvider")
     public Object[][] getDataProviderDataFromExcel(){
         return TimeOut.getTestData("Sheet1");
 
@@ -93,6 +92,7 @@ public class LoginTest extends BaseClass {
         loginPage = loginPage
                 .partialValidCreds(getUserName());
         //assert dashboard
+        System.out.println("partial test case");
         Assert.assertTrue(loginPage.verifyPartialCreds());
 
 

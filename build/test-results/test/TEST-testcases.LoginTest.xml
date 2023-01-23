@@ -1,208 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testcases.LoginTest" tests="4" skipped="2" failures="2" errors="0" timestamp="2023-01-22T17:47:26" hostname="DESKTOP-6GFGUQ4" time="21.781">
+<testsuite name="testcases.LoginTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-01-23T09:15:45" hostname="DESKTOP-6GFGUQ4" time="44.048">
   <properties/>
-  <testcase name="loginWithInValidCredentials[0](name03, pass123)" classname="testcases.LoginTest" time="18.41">
-    <failure message="org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer&#10;  (failed to check if window was closed: disconnected: unable to connect to renderer)&#10;  (Session info: chrome=109.0.5414.75)&#10;Build info: version: '4.5.0', revision: 'fe167b119a'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [9737fb83229e59a7d3c8415a8664d4c5, findElement {using=xpath, value=//input[@name=&quot;username&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Arif\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57208}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57208/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9737fb83229e59a7d3c8415a8664d4c5" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
-  (failed to check if window was closed: disconnected: unable to connect to renderer)
-  (Session info: chrome=109.0.5414.75)
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9737fb83229e59a7d3c8415a8664d4c5, findElement {using=xpath, value=//input[@name=&quot;username&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Arif\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57208}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57208/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9737fb83229e59a7d3c8415a8664d4c5
-	at java.base@17.0.5/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base@17.0.5/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base@17.0.5/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base@17.0.5/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base@17.0.5/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at app//org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at app//org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at app/jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-	at app//pages.LoginPage.blankLogin(LoginPage.java:56)
-	at app//testcases.LoginTest.loginWithInValidCredentials(LoginTest.java:76)
-	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.5/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.5/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base@17.0.5/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at app//org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at app//org.testng.TestRunner.run(TestRunner.java:601)
-	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at app//org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at app//org.testng.TestNG.runSuites(TestNG.java:1099)
-	at app//org.testng.TestNG.run(TestNG.java:1067)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:146)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:91)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
-	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.5/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.5/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</failure>
-  </testcase>
-  <testcase name="initialization" classname="testcases.LoginTest" time="3.207">
-    <failure message="org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.&#10;Build info: version: '4.5.0', revision: 'fe167b119a'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [da6c14cf54f8f6ddd459cecf6db6f41c, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Arif\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57244}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57244/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: da6c14cf54f8f6ddd459cecf6db6f41c" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da6c14cf54f8f6ddd459cecf6db6f41c, get {url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Arif\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57244}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57244/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: da6c14cf54f8f6ddd459cecf6db6f41c
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:571)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at app//com.org.baseclass.BaseClass.setUp(BaseClass.java:49)
-	at app//testcases.LoginTest.initialization(LoginTest.java:27)
-	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.5/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.5/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at app//org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base@17.0.5/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at app//org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at app//org.testng.TestRunner.run(TestRunner.java:601)
-	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at app//org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at app//org.testng.TestNG.runSuites(TestNG.java:1099)
-	at app//org.testng.TestNG.run(TestNG.java:1067)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:146)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:91)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
-	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.5/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.5/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-Caused by: java.io.UncheckedIOException: java.net.SocketException: Connection reset
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	... 53 more
-Caused by: java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</failure>
-  </testcase>
-  <testcase name="loginWithPartialCredentials" classname="testcases.LoginTest" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="loginWithValidCredentials" classname="testcases.LoginTest" time="0.0">
-    <skipped/>
-  </testcase>
+  <testcase name="loginWithInValidCredentials[0](name03, pass123)" classname="testcases.LoginTest" time="10.001"/>
+  <testcase name="loginWithPartialCredentials" classname="testcases.LoginTest" time="8.052"/>
+  <testcase name="loginWithValidCredentials" classname="testcases.LoginTest" time="10.453"/>
   <system-out><![CDATA[name03
 pass123
+invalid test case
+partial test case
+valid test case
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 56226
+  <system-err><![CDATA[Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 57314
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jan 22, 2023 9:46:46 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jan 23, 2023 1:15:39 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jan 22, 2023 9:46:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jan 23, 2023 1:15:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 109, so returning the closest version found: 106
-Jan 22, 2023 9:46:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jan 23, 2023 1:15:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 109 of 106
-[1674409652.843][WARNING]: Timed out connecting to Chrome, retrying...
-[1674409660.960][WARNING]: Timed out connecting to Chrome, retrying...
-Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 51277
+Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 61145
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jan 22, 2023 9:47:46 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jan 23, 2023 1:15:55 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jan 22, 2023 9:47:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jan 23, 2023 1:15:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 109, so returning the closest version found: 106
-Jan 22, 2023 9:47:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jan 23, 2023 1:15:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 109 of 106
-[1674409667.304][WARNING]: Processing messages while being disconnected
+Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 63694
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan 23, 2023 1:16:12 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Jan 23, 2023 1:16:12 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 109, so returning the closest version found: 106
+Jan 23, 2023 1:16:12 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 109 of 106
 ]]></system-err>
 </testsuite>

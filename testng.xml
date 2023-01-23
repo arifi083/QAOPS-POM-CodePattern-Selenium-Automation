@@ -3,18 +3,20 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Arif/IdeaProjects/qaops-pom">
         <classes>
+            <class name="testcases.DirectoryTest.LoginTest">
+                <methods>
+                    <include name="loginWithInValidCredentials"/>
+                    <include name="loginWithPartialCredentials"/>
+                    <include name="loginWithValidCredentials"/>
+
+                </methods>
+            </class>
             <class name="testcases.DirectoryTest">
                 <methods>
                     <include name="verifyDirectoryPage"/>
                 </methods>
             </class>
-            <class name="testcases.LoginTest">
-                <methods>
-                    <include name="loginWithValidCredentials"/>
-                    <include name="loginWithInValidCredentials"/>
-                    <include name="loginWithPartialCredentials"/>
-                </methods>
-            </class>
+
         </classes>
     </test>
 </suite>

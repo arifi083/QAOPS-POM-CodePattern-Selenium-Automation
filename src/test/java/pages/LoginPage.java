@@ -30,7 +30,7 @@ public class LoginPage extends BaseClass {
     @FindBy(xpath ="//p[@class='oxd-text oxd-text--p oxd-alert-content-text']")
     WebElement blankCredVerify;
 
-    @FindBy(xpath ="//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__mesages'])[1]")
+    @FindBy(xpath="(//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message'])[1]")
     WebElement partialCred;
 
     //create constructor
@@ -44,10 +44,12 @@ public class LoginPage extends BaseClass {
     public HomePage login(String username, String password) throws IOException, InterruptedException {
         hrmUserName.isDisplayed();
         hrmUserName.sendKeys(username);
+        Thread.sleep(2000);
         hrmPassword.isDisplayed();
         hrmPassword.sendKeys(password);
+        Thread.sleep(1000);
         loginBtn.click();
-        Thread.sleep(12000);
+        Thread.sleep(5000);
         return new HomePage();
 
     }
@@ -56,9 +58,11 @@ public class LoginPage extends BaseClass {
         hrmUserName.isDisplayed();
         hrmUserName.sendKeys(username);
         hrmPassword.isDisplayed();
+        Thread.sleep(2000);
         hrmPassword.sendKeys(password);
+        Thread.sleep(1000);
         loginBtn.click();
-        Thread.sleep(12000);
+        Thread.sleep(5000);
         return this;
 
     }
@@ -66,8 +70,9 @@ public class LoginPage extends BaseClass {
     public LoginPage partialValidCreds(String username) throws IOException, InterruptedException {
         hrmUserName.isDisplayed();
         hrmUserName.sendKeys(username);
+        Thread.sleep(2000);
         loginBtn.click();
-        Thread.sleep(10000);
+        Thread.sleep(5000);
         return this;
 
     }
